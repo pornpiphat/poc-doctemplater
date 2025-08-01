@@ -1,0 +1,13 @@
+{
+    "name": "Gianni Castiglione",
+    "address": "111 1st Avenue",
+    "city": "Redmond",
+    "state": "WA",
+    "zip": "67891",
+    "recipient":"Yamada",
+    "message": "Dear Mr. Sagese,\n\nI am writing to express my interest in the position at Shakti Bank. With my background and experience, I believe I would be a valuable addition to your team.\n\nThank you for considering my application. I look forward to the opportunity to speak with you further.\n\nSincerely,\nGianni Castiglione",
+    "link":{
+        "text": "super easy",  
+        "target": "https://github.com/alonrbar/easy-template-x"
+    }
+}
