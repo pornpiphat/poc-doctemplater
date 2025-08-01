@@ -36,7 +36,6 @@ const outputFolder = path.resolve(__dirname, "./output");
 const template2 = async () => {
     const templatePath = path.resolve(__dirname, './templates/t002.docx');
     const templateFile = fs.readFileSync(templatePath);
-
     const data = {
         companyName: "MOCK Company",
         newsletterTitle: 'Monthly newsletter',
@@ -64,7 +63,7 @@ const template2 = async () => {
     };
     const docxBuf: NonSharedBuffer = await handler.process(templateFile, data);
     const pdfBuf = await convertDocxToPDF(docxBuf);
-    fs.writeFileSync(path.join(outputFolder, 'too2-output.docx'), pdfBuf);
+    // fs.writeFileSync(path.join(outputFolder, 'too2-output.docx'), docxBuf);
     fs.writeFileSync(path.join(outputFolder, 'too2-output.pdf'), pdfBuf);
     console.log("PDF file has been successfully generated from the template!");
 }
